@@ -1,0 +1,8 @@
+# Ajouter ce bloc à ~/.codex/config.toml sur le serveur distant.
+[mcp_servers.banques-images]
+command = "/usr/bin/node"
+args = ["/home/debian/Outils/banques-images-mcp/src/server.js"]
+cwd = "/home/debian/Outils/banques-images-mcp"
+env_vars = ["PEXELS_API_KEY", "UNSPLASH_ACCESS_KEY", "PIXABAY_API_KEY"]
+startup_timeout_sec = 15
+tool_timeout_sec = 300
